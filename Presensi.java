@@ -1,19 +1,25 @@
+import java.util.Date;
+
 public class Presensi {
-    private String tanggal;
+    private Date tanggal;
     private int status;
-    public Presensi(String tanggal, int status) {
+
+    public Presensi(Date tanggal, int status) {
         this.tanggal = tanggal;
         this.status = status;
     }
-    public String getTanggal() {
+
+    public Date getTanggal() {
         return tanggal;
     }
+
     public int isStatus() {
         return status;
     }
+
     @Override
     public String toString() {
-        return "Presensi [tanggal=" + tanggal + ", status=" + (status == 1 ? "Hadir" : "Alpha");
+        return "Presensi [tanggal=" + tanggal + ", status=" + status + "]";
     }
 
 }

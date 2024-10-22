@@ -3,7 +3,7 @@ import java.util.Date;
 public class PresensiStaff extends Presensi {
     private Date jam;
 
-    public PresensiStaff(String tanggal, int status, Date jam) {
+    public PresensiStaff(Date tanggal, int status, Date jam) {
         super(tanggal, status);
         this.jam = jam;
     }
@@ -16,6 +16,5 @@ public class PresensiStaff extends Presensi {
     public String toString() {
         return super.toString() + ", Jam : " + jam;
     }
-    
-    
+
 }
